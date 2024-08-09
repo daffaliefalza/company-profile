@@ -1,0 +1,64 @@
+.produk-banner {
+  background-color: #e6e6e6;
+  position: relative;
+  height: 70vh;
+}
+
+.produk-banner .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.produk-banner h1 {
+  font-size: 32px;
+}
+
+.produk-banner button {
+  background-color: #fc8e1b;
+  border: 0;
+  color: #fff;
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  border-radius: 30px;
+}
+
+.our-product {
+  padding: 4rem 0;
+}
+
+.our-product h2 {
+  text-align: center;
+  font-size: 32px;
+  border-bottom: 1px solid black;
+}
+
+.our-product h3 {
+  font-size: 28px;
+}
+
+.our-product .product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.our-product .product-card {
+  background-color: #f5f5f5;
+  padding: 5rem 1rem;
+}
+
+.our-client {
+  padding: 4rem 0;
+  border: 1px solid yellow;
+}
+
+.our-client h2 {
+  text-align: center;
+}
+
+.our-client .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
