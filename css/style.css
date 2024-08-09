@@ -4,6 +4,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 html {
@@ -16,4 +17,19 @@ img {
 }
 
 .container {
+  max-width: 1250px;
+  margin-inline: auto;
+}
+
+nav .container {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .container ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
