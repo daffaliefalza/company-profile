@@ -18,18 +18,22 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/tentang.css" />
 
-    <title>Tentag Kami</title>
+    <title>Tentang Kami</title>
   </head>
   <body>
     <nav>
       <div class="container">
         <img src="assets/logo.svg" alt="logo" style="width: 150px" />
         <ul class="nav-list">
-          <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#">Tentang</a></li>
-          <li class="nav-item"><a href="#">Portfolio</a></li>
-          <li class="nav-item"><a href="#">Produk</a></li>
-          <li class="nav-item"><a href="#">Karir</a></li>
+          <li class="nav-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="tentang.html" style="color: red">Tentang</a>
+          </li>
+          <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a href="produk.html">Produk</a></li>
+          <li class="nav-item"><a href="karir.html">Karir</a></li>
         </ul>
       </div>
     </nav>
@@ -40,9 +44,8 @@
           <h3>Home > Tentang Kami</h3>
           <h1 class="hero-headline">CONTACT US RIGHT NOW</h1>
           <p class="hero-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum est
-            non, autem sequi ducimus voluptates vel esse rem beatae
-            exercitationem.
+            WE CLAIM TO BE THE BEST WHEN IT COMES TO HEAR AND RESPOND TO YOUR
+            INQUIRIES, PLEASE DO NOT HESITATE TO CONTACT US.
           </p>
           <button>see more</button>
         </div>
@@ -54,19 +57,19 @@
         <div class="left-highlight">
           <h3>Get in touch now</h3>
           <h2>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-            molestias, sed vel reprehenderit at ipsa.
+            Mitra Yang Tepat Untuk Jasa berkualitas, <br />Inovasi dan Nilai
+            Kontributor Rantai
           </h2>
         </div>
         <div class="right-highlight">
           <h3>Contact</h3>
           <div>
             <h4>Email Us</h4>
-            <p>xxx@gmail.com</p>
+            <p class="email">marketing@manikammega.com</p>
           </div>
           <div>
             <h4>Phone us</h4>
-            <h4>08213213</h4>
+            <p>021-29824930 / 021-22818149</p>
           </div>
         </div>
       </div>
@@ -74,20 +77,43 @@
 
     <section class="address">
       <div class="container">
-        <h3 class="address-title">Head Office</h3>
-        <h2>Jalan Komplek MARGA SARI INDAH CEMPAKA PUTIH</h2>
+        <div class="headline">
+          <h3 class="address-title">HEAD OFFICE</h3>
+          <p>
+            Jalan Komplek Bina Marga No 21 <br />Cipayung – Jakarta Timur 13840
+          </p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5209264943364!2d106.88614437366485!3d-6.326471593663056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed3d5feb9f19%3A0xda73050b96d98e02!2sJl.%20Komp.%20Bina%20Marga%20No.21%2C%20RT.1%2FRW.5%2C%20Cipayung%2C%20Kec.%20Cipayung%2C%20Kota%20Jakarta%20Timur%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2013840!5e0!3m2!1sid!2sid!4v1723246814994!5m2!1sid!2sid"
+          width="100%"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
 
     <section class="contact-form">
       <div class="container">
         <h3 class="contact-form-title">HUBUNGI KAMI</h3>
-        <form action="">
-          <label for="">Nama</label>
-          <input type="text" />
-          <label for="">Email</label>
-          <input type="email" />
-          <textarea name="" id="">Pesan</textarea>
+        <form action="#" method="post">
+          <div class="row">
+            <div class="input-group">
+              <label for="">Nama</label>
+              <input type="text" />
+            </div>
+            <div class="input-group">
+              <label for="">Email</label>
+              <input type="email" />
+            </div>
+          </div>
+          <div class="input-group-area">
+            <label for="">Pesan</label>
+            <textarea name="" id="" cols="30" rows="2"></textarea>
+          </div>
+          <button type="submit">Kirim</button>
         </form>
       </div>
     </section>
@@ -102,20 +128,78 @@
       </div>
     </section>
 
-    <footer class="footer" style="background-color: green">
-      <div class="footer-logo">
-        <img src="./assets/logo.svg" alt="" style="width: 300px" />
-      </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img src="./assets/logo.svg" alt="" style="width: 300px" />
+        </div>
 
-      <div class="footer-links">
-        <h3>Site map</h3>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Management</li>
-          <li>Achievement</li>
-          <li>Governance</li>
-        </ul>
+        <div class="footer-links">
+          <h3>Site map</h3>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Management</li>
+            <li>Achievement</li>
+            <li>Governance</li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>X</h3>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Management</li>
+            <li>Achievement</li>
+            <li>Governance</li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Site map</h3>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Management</li>
+            <li>Achievement</li>
+            <li>Governance</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="container">
+          <p>&copy; 2024 - All rights reserved</p>
+          <div style="display: flex; align-items: center; gap: 15px">
+            <img
+              src="./assets/images/facebook.svg"
+              alt=""
+              style="
+                filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(40deg)
+                  brightness(105%) contrast(104%);
+                width: 25px;
+              "
+            />
+            <img
+              src="./assets/images/twitter.svg"
+              alt=""
+              style="
+                filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(40deg)
+                  brightness(105%) contrast(104%);
+                width: 25px;
+              "
+            />
+            <img
+              src="./assets/images/instagram.png"
+              alt=""
+              style="
+                filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(40deg)
+                  brightness(105%) contrast(104%);
+                width: 25px;
+              "
+            />
+          </div>
+        </div>
       </div>
     </footer>
   </body>

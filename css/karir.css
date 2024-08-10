@@ -1,0 +1,192 @@
+.hero {
+  background-color: #f98206;
+  position: relative;
+  height: 550px;
+  color: #fff;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.hero-text {
+  /* z-index: 1;
+  font-weight: bold;
+  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid red; */
+  align-self: start;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.hero-text button {
+  background-color: #36552e;
+  color: #fff;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: none;
+}
+
+.karir-banner-image-wrapper {
+}
+
+.karir-banner-image-wrapper img {
+  height: 480px;
+}
+
+.join-us {
+  background-color: #d9d9d9;
+}
+
+.join-us .highlight {
+  text-align: center;
+}
+
+.join-us .container h3 {
+  color: #f98206;
+}
+
+.join-us .container p {
+  color: #36552e;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.job-list {
+}
+
+.job-list h3 {
+  color: #36552e;
+}
+
+.job-list ul li {
+  font-weight: bold;
+}
+
+.job-list-card {
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+.shape-triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 50px solid #36552e;
+  border-left: 50px solid transparent;
+}
+
+.job-list .button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-list .button-wrapper button:first-child {
+  padding: 0.5rem;
+  display: inline-block;
+  margin: 10px 0;
+  border-radius: 20px;
+  background-color: #969696;
+  border: 0;
+  color: #fff;
+}
+
+.job-list .button-wrapper button:last-child {
+  padding: 0.5rem;
+  display: inline-block;
+  background-color: #fc8e1b;
+  border: 0;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.job-list .container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.job-list .job-list-row {
+}
+
+.job-list .job-list-row .job-list-two-col {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.job-list .job-list-row .job-list-card {
+  background: #d9d9d9;
+  width: 300px;
+}
+
+.job-list .job-list-row .job-list-three-col {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.our-client {
+  text-align: center;
+}
+
+.our-client .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 650px;
+  }
+
+  .hero .container {
+    flex-direction: column;
+  }
+
+  .karir-banner-image-wrapper img {
+    height: 400px;
+  }
+
+  .join-us {
+    margin-top: 20rem;
+  }
+
+  .job-list .job-list-row .job-list-two-col {
+    flex-direction: column;
+  }
+
+  .job-list .job-list-row .job-list-three-col {
+    flex-direction: column;
+  }
+
+  .job-list .job-list-row .job-list-card {
+    background: #d9d9d9;
+    width: 100%;
+  }
+
+  .our-client .container {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+}
