@@ -154,9 +154,34 @@
   border-radius: 10px;
 }
 
+@media (max-width: 900px) and (min-width: 769px) {
+  .our-client .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+  }
+}
+
 @media (max-width: 768px) {
+  .hero-text {
+    top: 20%;
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+  }
+
   .highlight-tentang .container {
     grid-template-columns: 1fr;
+  }
+
+  .highlight-tentang .container .right-highlight {
+    margin-top: 20px;
+  }
+
+  .highlight-tentang .container h4 {
+    text-decoration: underline;
   }
 
   .contact-form form {

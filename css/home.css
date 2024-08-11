@@ -141,15 +141,29 @@
   align-items: center;
 }
 
+@media (max-width: 900px) and (min-width: 769px) {
+  .highlight-work .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+
+  .our-client .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
-    height: 100vh;
+    height: 1000px;
   }
 
   .hero .container {
     display: flex;
     flex-direction: column-reverse;
-    margin-top: 15rem;
   }
 
   .highlight-work {

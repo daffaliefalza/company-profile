@@ -199,6 +199,51 @@
   align-items: center;
 }
 
+@media (max-width: 900px) and (min-width: 769px) {
+  .reference-list-one .grid {
+    display: block;
+  }
+
+  .reference-list-one .reference-list-card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 15px 0;
+  }
+
+  .reference-list-two .grid {
+    display: block;
+  }
+
+  .reference-list-two .reference-list-card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 15px 0;
+  }
+
+  .test .reference-list-card {
+    width: 100%;
+  }
+
+  .certificate .certificate-card {
+    flex-direction: column;
+  }
+
+  .certificate .certificate-card img {
+    /* height: 300px; */
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .our-client .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .reference-highlight .row {
     flex-direction: column;

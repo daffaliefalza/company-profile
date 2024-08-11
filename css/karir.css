@@ -161,21 +161,47 @@
   align-items: center;
 }
 
+@media (max-width: 900px) and (min-width: 769px) {
+  .our-client .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
-    height: 650px;
+    height: 700px;
   }
 
   .hero .container {
     flex-direction: column;
   }
 
+  .hero-text h1 {
+    margin: 10px 0;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
   .karir-banner-image-wrapper img {
-    height: 400px;
+    height: 450px;
+    margin-top: 15px;
   }
 
   .join-us {
     margin-top: 20rem;
+  }
+
+  .join-us .container p {
+    color: #36552e;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
   }
 
   .job-list .job-list-row .job-list-two-col {

@@ -85,6 +85,15 @@
   align-items: center;
 }
 
+@media (max-width: 900px) and (min-width: 769px) {
+  .our-client .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .our-product .product-grid {
     grid-template-columns: 1fr;
