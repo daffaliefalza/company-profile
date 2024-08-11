@@ -18,10 +18,16 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
 
-    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
+    <title>Company Profile</title>
   </head>
   <body>
-    <nav>
+    <nav class="animate__animated animate__fadeInDown">
       <div class="container">
         <img src="assets/logo.svg" alt="logo" style="width: 150px" />
         <ul class="nav-list">
@@ -37,18 +43,17 @@
         </ul>
       </div>
     </nav>
-
     <section class="porto-banner">
       <div class="overlay">
         <div class="container">
-          <h1>Portfolio</h1>
+          <h1 class="animate__animated animate__fadeInLeft">Portfolio</h1>
         </div>
       </div>
     </section>
 
     <div class="divider-section">
       <div class="container">
-        <h4>HOME > PORTFOLIO</h4>
+        <h4 class="animate__animated animate__fadeInLeft">HOME > PORTFOLIO</h4>
       </div>
     </div>
 
@@ -330,7 +335,7 @@
         </div>
 
         <div class="footer-links">
-          <h3>X</h3>
+          <h3>Site map</h3>
           <ul>
             <li>Home</li>
             <li>About</li>
@@ -386,5 +391,38 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // scroll reveals
+      ScrollReveal().reveal(".reference-highlight .container", {
+        delay: 1000,
+        origin: "top",
+        distance: "80px",
+      });
+
+      ScrollReveal().reveal(".reference-list-one .container", {
+        delay: 1000,
+        origin: "top",
+        distance: "80px",
+      });
+
+      ScrollReveal().reveal(".reference-list-two .container", {
+        delay: 1500,
+        origin: "top",
+        distance: "80px",
+      });
+
+      ScrollReveal().reveal(".certificate-card", {
+        delay: 1000,
+        origin: "top",
+        distance: "80px",
+      });
+
+      ScrollReveal().reveal(".our-client", {
+        delay: 1000,
+        origin: "top",
+        distance: "80px",
+      });
+    </script>
   </body>
 </html>

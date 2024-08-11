@@ -14,8 +14,7 @@
   font-weight: bold;
   max-width: 800px;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 30%;
 }
 
 .hero h1 {
@@ -45,7 +44,7 @@
 
 .highlight-tentang .container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
 }
 
 .highlight-tentang .container .left-highlight {

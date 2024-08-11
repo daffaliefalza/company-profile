@@ -1,7 +1,7 @@
 .hero {
   background-color: #f98206;
   position: relative;
-  height: 550px;
+  height: 600px;
   color: #fff;
 }
 
@@ -29,8 +29,9 @@
 }
 
 .hero-text p {
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .hero-text button {
@@ -42,12 +43,18 @@
   border: none;
 }
 
-.karir-banner-image-wrapper {
+.hero .container .karir-banner-image-wrapper img {
+  border-radius: 15px;
+  width: 400px;
+  padding: 5px;
+}
+
+/* .karir-banner-image-wrapper {
 }
 
 .karir-banner-image-wrapper img {
   height: 480px;
-}
+} */
 
 .join-us {
   background-color: #d9d9d9;

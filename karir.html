@@ -18,10 +18,16 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/karir.css" />
 
-    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
+    <title>Company Profile</title>
   </head>
   <body>
-    <nav>
+    <nav class="animate__animated animate__fadeInDown">
       <div class="container">
         <img src="assets/logo.svg" alt="logo" style="width: 150px" />
         <ul class="nav-list">
@@ -40,18 +46,26 @@
 
     <header class="hero">
       <div class="container">
-        <div class="hero-text">
+        <div class="hero-text animate__animated animate__fadeInLeft">
           <h3>Home > Karir</h3>
-          <h1 class="hero-headline">CONTACT US RIGHT NOW</h1>
+          <h1 class="hero-headline">CONTACT US <br />RIGHT NOW</h1>
           <p class="hero-description">
             DI TRIAS, ANDA AKAN BEKERJA DI LINGKUNGAN KERJA DENGAN KEMUNGKINAN
             PENGEMBANGAN KARIR LEBIH LANJUT
           </p>
-          <button>see more</button>
+          <button>See more</button>
         </div>
-        <div class="karir-banner-image-wrapper">
+
+        <div
+          class="karir-banner-image-wrapper image-wrapper animate__animated animate__fadeInUp"
+        >
+          <div class="border-element"></div>
+          <img src="assets/images/construction.png" alt="Banner" />
+        </div>
+
+        <!-- <div class="karir-banner-image-wrapper">
           <img src="assets/images/karir-banner-image.png" alt="" />
-        </div>
+        </div> -->
       </div>
     </header>
 
@@ -176,7 +190,7 @@
         </div>
 
         <div class="footer-links">
-          <h3>X</h3>
+          <h3>Site map</h3>
           <ul>
             <li>Home</li>
             <li>About</li>
@@ -232,5 +246,19 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      ScrollReveal().reveal(".job-list .container", {
+        delay: 1000,
+        origin: "top",
+        distance: "80px",
+      });
+
+      ScrollReveal().reveal(".our-client", {
+        delay: 1000,
+        origin: "top",
+        distance: "80px",
+      });
+    </script>
   </body>
 </html>

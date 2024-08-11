@@ -17,11 +17,16 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
 
     <title>Company Profile</title>
   </head>
   <body>
-    <nav>
+    <nav class="animate__animated animate__fadeInDown">
       <div class="container">
         <img src="assets/logo.svg" alt="logo" style="width: 150px" />
         <ul class="nav-list">
@@ -38,7 +43,7 @@
 
     <header class="hero">
       <div class="container">
-        <div class="hero-text">
+        <div class="hero-text animate__animated animate__fadeInLeft">
           <h1 class="hero-headline">Define your future with us</h1>
           <p class="hero-description">
             Inisiator Variable Massage Sign (VMS) pertama di Indonesia dan
@@ -47,7 +52,7 @@
           <a href="#">Lebih Lanjut ➜ </a>
         </div>
 
-        <div class="image-wrapper">
+        <div class="image-wrapper animate__animated animate__fadeInUp">
           <div class="border-element"></div>
           <img src="assets/images/construction.png" alt="Banner" />
         </div>
@@ -116,7 +121,7 @@
         </div>
 
         <div class="footer-links">
-          <h3>X</h3>
+          <h3>Site map</h3>
           <ul>
             <li>Home</li>
             <li>About</li>
@@ -171,6 +176,47 @@
           </div>
         </div>
       </div>
+      <!-- 
+      <button id="toggle-whatsapp">
+        <img
+          src="./assets/images/whatsapp.jpeg"
+          alt=""
+          style="width: 100px; position: fixed; bottom: 0; right: 0"
+        />
+      </button> -->
     </footer>
+
+    <script>
+      // scroll reveals
+      ScrollReveal().reveal(".highlight-work", {
+        delay: 1000,
+        origin: "top",
+        distance: "80px",
+      });
+
+      ScrollReveal().reveal(".certificate", {
+        delay: 1000,
+        origin: "top",
+        distance: "80px",
+      });
+
+      ScrollReveal().reveal(".our-client", {
+        delay: 700,
+        origin: "top",
+        distance: "80px",
+      });
+    </script>
+
+    <script>
+      const whatsappBtn = document.getElementById("toggle-whatsapp");
+
+      whatsappBtn.addEventListener("click", () => {
+        const noHp = "6281213567170";
+        let pesan = `https://api.whatsapp.com/send?phone=${noHp}&text=Halo Admin, saya mau bertanya`;
+
+        // Open the WhatsApp message URL in a new window
+        window.open(pesan, "_blank");
+      });
+    </script>
   </body>
 </html>

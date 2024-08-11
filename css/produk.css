@@ -6,8 +6,7 @@
 
 .produk-banner .content {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 30%;
 }
 
 .produk-banner h1 {

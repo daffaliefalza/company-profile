@@ -18,10 +18,16 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/produk.css" />
 
-    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
+    <title>Company Profile</title>
   </head>
   <body>
-    <nav>
+    <nav class="animate__animated animate__fadeInDown">
       <div class="container">
         <img src="assets/logo.svg" alt="logo" style="width: 150px" />
         <ul class="nav-list">
@@ -40,7 +46,7 @@
 
     <section class="produk-banner">
       <div class="container">
-        <div class="content">
+        <div class="content animate__animated animate__fadeInLeft">
           <h1>TOP SALE</h1>
           <button>SEE MORE</button>
         </div>
@@ -101,7 +107,7 @@
         </div>
 
         <div class="footer-links">
-          <h3>X</h3>
+          <h3>Site map</h3>
           <ul>
             <li>Home</li>
             <li>About</li>
@@ -159,5 +165,19 @@
     </footer>
 
     <div class="shape-container"></div>
+
+    <script>
+      ScrollReveal().reveal(".our-product", {
+        delay: 1000,
+        origin: "top",
+        distance: "80px",
+      });
+
+      ScrollReveal().reveal(".our-client", {
+        delay: 1000,
+        origin: "top",
+        distance: "80px",
+      });
+    </script>
   </body>
 </html>

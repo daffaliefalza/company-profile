@@ -18,10 +18,16 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/tentang.css" />
 
-    <title>Tentang Kami</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
+    <title>Company Profile</title>
   </head>
   <body>
-    <nav>
+    <nav class="animate__animated animate__fadeInDown">
       <div class="container">
         <img src="assets/logo.svg" alt="logo" style="width: 150px" />
         <ul class="nav-list">
@@ -40,7 +46,7 @@
 
     <header class="hero">
       <div class="container">
-        <div class="hero-text">
+        <div class="hero-text animate__animated animate__fadeInLeft">
           <h3>Home > Tentang Kami</h3>
           <h1 class="hero-headline">CONTACT US RIGHT NOW</h1>
           <p class="hero-description">
@@ -146,7 +152,7 @@
         </div>
 
         <div class="footer-links">
-          <h3>X</h3>
+          <h3>Site map</h3>
           <ul>
             <li>Home</li>
             <li>About</li>
@@ -202,5 +208,32 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // scroll reveals
+      ScrollReveal().reveal(".highlight-tentang", {
+        delay: 1000,
+        origin: "top",
+        distance: "80px",
+      });
+
+      ScrollReveal().reveal(".address", {
+        delay: 2000,
+        origin: "top",
+        distance: "80px",
+      });
+
+      ScrollReveal().reveal(".contact-form .container", {
+        delay: 1000,
+        origin: "top",
+        distance: "80px",
+      });
+
+      ScrollReveal().reveal(".our-client", {
+        delay: 1000,
+        origin: "top",
+        distance: "80px",
+      });
+    </script>
   </body>
 </html>
