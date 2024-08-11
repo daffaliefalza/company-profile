@@ -30,6 +30,10 @@ ul {
   line-height: 2;
 }
 
+footer ul {
+  line-height: 2.3;
+}
+
 button {
   cursor: pointer;
 }
@@ -49,8 +53,13 @@ img {
   padding-inline: 1rem;
 }
 
-nav {
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background-color: #fff;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optional for adding shadow */
 }
 
 nav .container {
@@ -68,6 +77,11 @@ nav .container ul {
 
 nav .container a {
   color: #000;
+  transition: color 0.3s ease;
+}
+
+nav .container a:hover {
+  color: red;
 }
 
 footer {
