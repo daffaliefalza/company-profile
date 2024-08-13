@@ -90,6 +90,11 @@ footer {
   padding-top: 3rem;
 }
 
+footer .footer-links a {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
 footer h3 {
   color: rgb(180, 180, 11);
   margin-bottom: 20px;
@@ -97,7 +102,7 @@ footer h3 {
 
 footer .container {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
 }
 
 footer .container .footer-logo {
