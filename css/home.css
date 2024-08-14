@@ -122,6 +122,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  background-color: orange;
+  border-radius: 25px;
 }
 
 .certificate {
@@ -129,7 +131,7 @@
 }
 
 .certificate img {
-  border: 1px solid red;
+  width: 380px;
 }
 
 .certificate h2 {
