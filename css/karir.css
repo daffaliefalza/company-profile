@@ -1,0 +1,230 @@
+.hero {
+  background-color: #f98206;
+  position: relative;
+  height: 600px;
+  color: #fff;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/images/tentang-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.hero-text {
+  /* z-index: 1;
+  font-weight: bold;
+  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid red; */
+  align-self: start;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.hero-text button {
+  background-color: #36552e;
+  color: #fff;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: none;
+}
+
+.hero .container .karir-banner-image-wrapper img {
+  width: 400px;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 15px;
+
+  padding: 5px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  object-fit: cover;
+}
+
+.join-us {
+  background-color: #d9d9d9;
+}
+
+.join-us .highlight {
+  text-align: center;
+}
+
+.join-us .container h3 {
+  color: #f98206;
+}
+
+.join-us .container p {
+  color: #36552e;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.job-list {
+}
+
+.job-list h3 {
+  color: #36552e;
+}
+
+.job-list ul li {
+  font-weight: bold;
+}
+
+.job-list-card {
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+.shape-triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 50px solid #36552e;
+  border-left: 50px solid transparent;
+}
+
+.job-list .button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-list .button-wrapper button:first-child {
+  padding: 0.5rem;
+  display: inline-block;
+  margin: 10px 0;
+  border-radius: 20px;
+  background-color: #969696;
+  border: 0;
+  color: #fff;
+}
+
+.job-list .button-wrapper button:last-child {
+  padding: 0.5rem;
+  display: inline-block;
+  background-color: #fc8e1b;
+  border: 0;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.job-list .container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.job-list .job-list-row {
+}
+
+.job-list .job-list-row .job-list-two-col {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.job-list .job-list-row .job-list-card {
+  background: #d9d9d9;
+  width: 300px;
+}
+
+.job-list .job-list-row .job-list-three-col {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.our-client {
+  text-align: center;
+}
+
+.our-client .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 900px) and (min-width: 769px) {
+  .our-client .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 700px;
+  }
+
+  .hero .container {
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    margin: 10px 0;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .karir-banner-image-wrapper img {
+    height: 450px;
+    margin-top: 15px;
+  }
+
+  .join-us {
+    margin-top: 20rem;
+  }
+
+  .join-us .container p {
+    color: #36552e;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  .job-list .job-list-row .job-list-two-col {
+    flex-direction: column;
+  }
+
+  .job-list .job-list-row .job-list-three-col {
+    flex-direction: column;
+  }
+
+  .job-list .job-list-row .job-list-card {
+    background: #d9d9d9;
+    width: 100%;
+  }
+
+  .our-client .container {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+}

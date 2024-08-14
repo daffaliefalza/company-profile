@@ -1,0 +1,207 @@
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../assets/images/tentang-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+}
+
+.hero-text {
+  z-index: 1;
+  font-weight: bold;
+  max-width: 800px;
+  position: absolute;
+  top: 30%;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.hero h3 {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 1.5rem 0;
+}
+
+.hero button {
+  background-color: #fc8e1b;
+  border-radius: 30px;
+  padding: 1rem 2.5rem;
+  border: 0;
+}
+
+.highlight-tentang {
+}
+
+.highlight-tentang .container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.highlight-tentang .container .left-highlight {
+}
+
+.highlight-tentang .container .left-highlight h3 {
+  color: #fc8e1b;
+}
+
+.highlight-tentang .container .right-highlight {
+}
+
+.highlight-tentang .container .right-highlight h3 {
+  color: #fc8e1b;
+}
+
+.highlight-tentang .container .right-highlight h4 {
+  color: #36552e;
+  margin: 15px 0;
+}
+
+.highlight-tentang .container .right-highlight .email {
+  width: max-content;
+  position: relative;
+}
+
+.highlight-tentang .container .right-highlight .email::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  height: 2px;
+  background-color: black;
+}
+
+.address .headline {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.address .headline h3 {
+  color: #fc8e1b;
+}
+.address .headline p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.contact-form {
+  background-color: rgb(73, 100, 73);
+  color: #fff;
+}
+
+.contact-form .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form form {
+  width: 60%;
+}
+
+.contact-form .container .row {
+  display: flex;
+  gap: 15px;
+}
+
+.contact-form .container .input-group {
+  width: 100%;
+}
+
+.contact-form .container .input-group input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 18px;
+}
+
+.contact-form .container label {
+  display: block;
+}
+
+.contact-form .container .input-group-area {
+  width: 100%;
+}
+
+.contact-form .container .input-group-area textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 18px;
+}
+
+.contact-form button {
+  width: max-content;
+  margin-inline: auto;
+  display: block;
+  background-color: #fc8e1b;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) and (min-width: 769px) {
+  .our-client .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    top: 18%;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    margin: 1.5rem 0;
+    font-weight: lighter;
+  }
+
+  .highlight-tentang .container {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-tentang .container .right-highlight {
+    margin-top: 20px;
+  }
+
+  .highlight-tentang .container h4 {
+    text-decoration: underline;
+  }
+
+  .contact-form form {
+    width: 80%;
+  }
+
+  .contact-form .container .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .our-client .container {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+}

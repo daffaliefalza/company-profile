@@ -16,7 +16,8 @@
     <!-- link to general css (style css) -->
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/produk.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -32,67 +33,52 @@
           src="assets/logo.svg"
           alt="logo"
           style="width: 150px; cursor: pointer"
+          onclick="window.location.href='index.html'"
         />
-
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="index.html" style="color: red">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li class="nav-item"><a href="tentang.html">Tentang Kami</a></li>
           <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
-          <li class="nav-item"><a href="produk.html">Produk</a></li>
+          <li class="nav-item">
+            <a href="produk.html" style="color: red">Produk</a>
+          </li>
           <li class="nav-item"><a href="karir.html">Karir</a></li>
         </ul>
       </div>
     </nav>
 
-    <header class="hero">
+    <section class="produk-banner">
       <div class="container">
-        <div class="hero-text animate__animated animate__fadeInLeft">
-          <h1 class="hero-headline">Define your future with us</h1>
-          <p class="hero-description">
-            Inisiator Variable Massage Sign (VMS) pertama di Indonesia dan
-            selalu berinovasi untuk menyediakan layanan terbaik bagi anda.
-          </p>
-          <a href="tentang.html">Lebih Lanjut ➜ </a>
-        </div>
-
-        <div class="image-wrapper animate__animated animate__fadeInUp">
-          <div class="border-element"></div>
-          <img src="assets/images/man.png" alt="Banner" />
-        </div>
-      </div>
-    </header>
-
-    <section class="highlight-work">
-      <h2 style="text-align: center; margin-bottom: 20px">Our Services</h2>
-      <div class="container">
-        <div class="card">
-          <img src="./assets/images/man.png" alt="" />
-        </div>
-        <div class="card">
-          <img src="./assets/images/man.png" alt="" />
-        </div>
-        <div class="card">
-          <img src="./assets/images/man.png" alt="" />
-        </div>
-        <div class="card">
-          <img src="./assets/images/man.png" alt="" />
+        <div class="content animate__animated animate__fadeInLeft">
+          <h1>TOP SALE</h1>
+          <button>SEE MORE</button>
         </div>
       </div>
     </section>
 
-    <section class="certificate">
-      <h2>Sertifikat ISO</h2>
+    <section class="our-product">
       <div class="container">
-        <div class="card-certificate">
-          <img src="assets/images/sertifikat.jpg" alt="" />
-        </div>
-        <div class="card-certificate">
-          <img src="assets/images/sertifikat.jpg" alt="" />
-        </div>
-        <div class="card-certificate">
-          <img src="assets/images/sertifikat.jpg" alt="" />
+        <h2 class="our-product-title">PRODUK KAMI</h2>
+        <div class="line"></div>
+        <div class="product-grid">
+          <div class="product-card">
+            <h3>Nama Jasa</h3>
+            <button>SEE MORE</button>
+          </div>
+          <div class="product-card">
+            <h3>Nama Jasa</h3>
+            <button>SEE MORE</button>
+          </div>
+          <div class="product-card">
+            <h3>Nama Jasa</h3>
+            <button>SEE MORE</button>
+          </div>
+          <div class="product-card">
+            <h3>Nama Jasa</h3>
+            <button>SEE MORE</button>
+          </div>
         </div>
       </div>
     </section>
@@ -175,6 +161,14 @@
           </div>
         </div>
       </div>
+      <!-- 
+      <button id="toggle-whatsapp">
+        <img
+          src="./assets/images/whatsapp.jpeg"
+          alt=""
+          style="width: 100px; position: fixed; bottom: 0; right: 0"
+        />
+      </button> -->
 
       <button id="toggle-whatsapp">
         <img
@@ -185,22 +179,17 @@
       </button>
     </footer>
 
-    <script>
-      // scroll reveals
-      ScrollReveal().reveal(".highlight-work", {
-        delay: 1000,
-        origin: "top",
-        distance: "80px",
-      });
+    <div class="shape-container"></div>
 
-      ScrollReveal().reveal(".certificate", {
+    <script>
+      ScrollReveal().reveal(".our-product", {
         delay: 1000,
         origin: "top",
         distance: "80px",
       });
 
       ScrollReveal().reveal(".our-client", {
-        delay: 700,
+        delay: 1000,
         origin: "top",
         distance: "80px",
       });

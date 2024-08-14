@@ -16,7 +16,8 @@
     <!-- link to general css (style css) -->
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/tentang.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -32,13 +33,15 @@
           src="assets/logo.svg"
           alt="logo"
           style="width: 150px; cursor: pointer"
+          onclick="window.location.href='index.html'"
         />
-
         <ul class="nav-list">
           <li class="nav-item">
-            <a href="index.html" style="color: red">Home</a>
+            <a href="index.html">Home</a>
           </li>
-          <li class="nav-item"><a href="tentang.html">Tentang Kami</a></li>
+          <li class="nav-item">
+            <a href="tentang.html" style="color: red">Tentang Kami</a>
+          </li>
           <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
           <li class="nav-item"><a href="produk.html">Produk</a></li>
           <li class="nav-item"><a href="karir.html">Karir</a></li>
@@ -49,56 +52,107 @@
     <header class="hero">
       <div class="container">
         <div class="hero-text animate__animated animate__fadeInLeft">
-          <h1 class="hero-headline">Define your future with us</h1>
+          <h3>Home > Tentang Kami</h3>
+          <h1 class="hero-headline">CONTACT US RIGHT NOW</h1>
           <p class="hero-description">
-            Inisiator Variable Massage Sign (VMS) pertama di Indonesia dan
-            selalu berinovasi untuk menyediakan layanan terbaik bagi anda.
+            WE CLAIM TO BE THE BEST WHEN IT COMES TO HEAR AND RESPOND TO YOUR
+            INQUIRIES, PLEASE DO NOT HESITATE TO CONTACT US.
           </p>
-          <a href="tentang.html">Lebih Lanjut ➜ </a>
-        </div>
-
-        <div class="image-wrapper animate__animated animate__fadeInUp">
-          <div class="border-element"></div>
-          <img src="assets/images/man.png" alt="Banner" />
+          <button>See more</button>
         </div>
       </div>
     </header>
 
-    <section class="highlight-work">
-      <h2 style="text-align: center; margin-bottom: 20px">Our Services</h2>
+    <section class="highlight-tentang">
       <div class="container">
-        <div class="card">
-          <img src="./assets/images/man.png" alt="" />
+        <div class="left-highlight">
+          <h3>Get in touch now</h3>
+          <h2>
+            Mitra Yang Tepat Untuk Jasa berkualitas, <br />Inovasi dan Nilai
+            Kontributor Rantai
+          </h2>
         </div>
-        <div class="card">
-          <img src="./assets/images/man.png" alt="" />
-        </div>
-        <div class="card">
-          <img src="./assets/images/man.png" alt="" />
-        </div>
-        <div class="card">
-          <img src="./assets/images/man.png" alt="" />
+        <div class="right-highlight">
+          <h3>Contact</h3>
+          <div>
+            <h4>Email Us</h4>
+            <p class="email">marketing@manikammega.com</p>
+          </div>
+          <div>
+            <h4>Phone us</h4>
+            <p>021-29824930 / 021-22818149</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="certificate">
-      <h2>Sertifikat ISO</h2>
+    <section class="address">
       <div class="container">
-        <div class="card-certificate">
-          <img src="assets/images/sertifikat.jpg" alt="" />
+        <div class="headline">
+          <h3 class="address-title">HEAD OFFICE</h3>
+          <p>
+            Jalan Komplek Bina Marga No 21 <br />Cipayung – Jakarta Timur 13840
+          </p>
         </div>
-        <div class="card-certificate">
-          <img src="assets/images/sertifikat.jpg" alt="" />
-        </div>
-        <div class="card-certificate">
-          <img src="assets/images/sertifikat.jpg" alt="" />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5209264943364!2d106.88614437366485!3d-6.326471593663056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed3d5feb9f19%3A0xda73050b96d98e02!2sJl.%20Komp.%20Bina%20Marga%20No.21%2C%20RT.1%2FRW.5%2C%20Cipayung%2C%20Kec.%20Cipayung%2C%20Kota%20Jakarta%20Timur%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2013840!5e0!3m2!1sid!2sid!4v1723246814994!5m2!1sid!2sid"
+          width="100%"
+          height="500"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <div class="container">
+        <h3 class="contact-form-title">HUBUNGI KAMI</h3>
+        <form
+          id="contactForm"
+          action="https://formsubmit.co/ajax/ajaloading5@gmail.com"
+          method="POST"
+        >
+          <div class="row">
+            <div class="input-group">
+              <label for="nama">Nama</label>
+              <input type="text" name="nama" required />
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" required />
+            </div>
+          </div>
+          <div class="input-group-area">
+            <label for="pesan">Pesan</label>
+            <textarea name="pesan" cols="30" rows="2" required></textarea>
+          </div>
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <button type="submit">Kirim</button>
+        </form>
+
+        <div
+          id="formMessage"
+          style="
+            display: none; /* Hidden by default */
+            color: #000; /* Green color */
+            font-weight: bold;
+            margin-top: 15px;
+            text-align: center;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 10px;
+            border-radius: 5px;
+          "
+        >
+          Pesan Anda telah berhasil dikirim!
         </div>
       </div>
     </section>
 
     <section class="our-client">
-      <h2>KLIEN KAMI</h2>
       <div class="container">
         <img src="assets/logo.svg" alt="logo" style="width: 150px" />
         <img src="assets/logo.svg" alt="logo" style="width: 150px" />
@@ -175,6 +229,14 @@
           </div>
         </div>
       </div>
+      <!-- 
+      <button id="toggle-whatsapp">
+        <img
+          src="./assets/images/whatsapp.jpeg"
+          alt=""
+          style="width: 100px; position: fixed; bottom: 0; right: 0"
+        />
+      </button> -->
 
       <button id="toggle-whatsapp">
         <img
@@ -186,21 +248,59 @@
     </footer>
 
     <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission
+
+          fetch(this.action, {
+            method: "POST",
+            body: new FormData(this),
+            headers: {
+              Accept: "application/json",
+            },
+          })
+            .then((response) => {
+              if (response.ok) {
+                document.getElementById("formMessage").style.display = "block";
+                this.reset(); // Reset form fields after submission
+
+                // Hide the message after 2 seconds
+                setTimeout(() => {
+                  formMessage.style.display = "none";
+                }, 3000);
+              } else {
+                alert("Maaf, ada masalah dalam mengirim pesan.");
+              }
+            })
+            .catch((error) => {
+              alert("Maaf, ada masalah dalam mengirim pesan.");
+            });
+        });
+    </script>
+
+    <script>
       // scroll reveals
-      ScrollReveal().reveal(".highlight-work", {
+      ScrollReveal().reveal(".highlight-tentang", {
         delay: 1000,
         origin: "top",
         distance: "80px",
       });
 
-      ScrollReveal().reveal(".certificate", {
+      ScrollReveal().reveal(".address", {
+        delay: 2000,
+        origin: "top",
+        distance: "80px",
+      });
+
+      ScrollReveal().reveal(".contact-form .container", {
         delay: 1000,
         origin: "top",
         distance: "80px",
       });
 
       ScrollReveal().reveal(".our-client", {
-        delay: 700,
+        delay: 1000,
         origin: "top",
         distance: "80px",
       });
