@@ -10,6 +10,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
+  gap: 60px;
 }
 
 .hero .container .hero-text {
@@ -21,8 +22,10 @@
 }
 
 .hero .container .image-wrapper img {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23);
+  width: 350px; /* Set your desired fixed width */
+  height: 500px; /* Set your desired fixed height */
 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.23);
   border-radius: 15px;
 
   /* Add a border with some padding */
@@ -31,6 +34,9 @@
 
   /* Add a subtle transition effect for hover state */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Ensure the image covers the entire area */
+  object-fit: cover; /* or 'contain' if you want the image to fit within the dimensions */
 }
 
 .hero .container .image-wrapper img:hover {
@@ -40,7 +46,6 @@
   /* Intensify the shadow on hover */
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.25);
 }
-
 .hero .container .image-wrapper img {
   /* display: flex;
   justify-content: center;
@@ -108,12 +113,23 @@
 
 .highlight-work .card {
   width: 200px;
+  height: 200px;
   border-radius: 25px;
   background-color: orange;
 }
 
+.highlight-work .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .certificate {
   background-color: #fff;
+}
+
+.certificate img {
+  border: 1px solid red;
 }
 
 .certificate h2 {
@@ -164,6 +180,15 @@
   .hero .container {
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .hero h1 {
+    font-size: 38px !important;
+    margin: 1rem 0 0.3rem 0;
+  }
+
+  .hero img {
+    margin-top: 40px;
   }
 
   .highlight-work {

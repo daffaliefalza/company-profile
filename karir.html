@@ -244,14 +244,13 @@
           </div>
         </div>
       </div>
-      <!-- 
       <button id="toggle-whatsapp">
         <img
-          src="./assets/images/whatsapp.jpeg"
+          src="./assets/images/whatsapp-removebg-preview.png"
           alt=""
-          style="width: 100px; position: fixed; bottom: 0; right: 0"
+          style="width: 75px; position: fixed; bottom: 0; right: 0"
         />
-      </button> -->
+      </button>
     </footer>
 
     <script>
@@ -265,6 +264,18 @@
         delay: 1000,
         origin: "top",
         distance: "80px",
+      });
+    </script>
+
+    <script>
+      const whatsappBtn = document.getElementById("toggle-whatsapp");
+
+      whatsappBtn.addEventListener("click", () => {
+        const noHp = "628888628697";
+        let pesan = `https://api.whatsapp.com/send?phone=${noHp}&text=Halo Admin, saya mau bertanya`;
+
+        // Open the WhatsApp message URL in a new window
+        window.open(pesan, "_blank");
       });
     </script>
   </body>

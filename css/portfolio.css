@@ -7,7 +7,9 @@
       rgba(255, 255, 255, 0.4)
     ),
     url("../assets/images/portfolio-banner.png");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .porto-banner h1 {

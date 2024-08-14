@@ -109,23 +109,46 @@
     <section class="contact-form">
       <div class="container">
         <h3 class="contact-form-title">HUBUNGI KAMI</h3>
-        <form action="#" method="post">
+        <form
+          id="contactForm"
+          action="https://formsubmit.co/ajax/ajaloading5@gmail.com"
+          method="POST"
+        >
           <div class="row">
             <div class="input-group">
-              <label for="">Nama</label>
-              <input type="text" />
+              <label for="nama">Nama</label>
+              <input type="text" name="nama" required />
             </div>
             <div class="input-group">
-              <label for="">Email</label>
-              <input type="email" />
+              <label for="email">Email</label>
+              <input type="email" name="email" required />
             </div>
           </div>
           <div class="input-group-area">
-            <label for="">Pesan</label>
-            <textarea name="" id="" cols="30" rows="2"></textarea>
+            <label for="pesan">Pesan</label>
+            <textarea name="pesan" cols="30" rows="2" required></textarea>
           </div>
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
           <button type="submit">Kirim</button>
         </form>
+
+        <div
+          id="formMessage"
+          style="
+            display: none; /* Hidden by default */
+            color: #000; /* Green color */
+            font-weight: bold;
+            margin-top: 15px;
+            text-align: center;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 10px;
+            border-radius: 5px;
+          "
+        >
+          Pesan Anda telah berhasil dikirim!
+        </div>
       </div>
     </section>
 
@@ -214,7 +237,47 @@
           style="width: 100px; position: fixed; bottom: 0; right: 0"
         />
       </button> -->
+
+      <button id="toggle-whatsapp">
+        <img
+          src="./assets/images/whatsapp-removebg-preview.png"
+          alt=""
+          style="width: 75px; position: fixed; bottom: 0; right: 0"
+        />
+      </button>
     </footer>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the default form submission
+
+          fetch(this.action, {
+            method: "POST",
+            body: new FormData(this),
+            headers: {
+              Accept: "application/json",
+            },
+          })
+            .then((response) => {
+              if (response.ok) {
+                document.getElementById("formMessage").style.display = "block";
+                this.reset(); // Reset form fields after submission
+
+                // Hide the message after 2 seconds
+                setTimeout(() => {
+                  formMessage.style.display = "none";
+                }, 3000);
+              } else {
+                alert("Maaf, ada masalah dalam mengirim pesan.");
+              }
+            })
+            .catch((error) => {
+              alert("Maaf, ada masalah dalam mengirim pesan.");
+            });
+        });
+    </script>
 
     <script>
       // scroll reveals
@@ -240,6 +303,18 @@
         delay: 1000,
         origin: "top",
         distance: "80px",
+      });
+    </script>
+
+    <script>
+      const whatsappBtn = document.getElementById("toggle-whatsapp");
+
+      whatsappBtn.addEventListener("click", () => {
+        const noHp = "628888628697";
+        let pesan = `https://api.whatsapp.com/send?phone=${noHp}&text=Halo Admin, saya mau bertanya`;
+
+        // Open the WhatsApp message URL in a new window
+        window.open(pesan, "_blank");
       });
     </script>
   </body>
